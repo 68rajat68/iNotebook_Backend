@@ -10,7 +10,14 @@
 // module.exports = connectToMongo;
 
 
-const mongoURI = "mongodb://localhost:27017/inotebook"
+// const mongoURI = "mongodb://localhost:27017/inotebook"
+// const mongoURI = process.env.database
+// "mongodb+srv://68rajat68:<68rajat68password>@inotebook.w1hhh.mongodb.net/?retryWrites=true&w=majority&appName=iNotebook"
+// const mongoURI = "mongodb+srv://68rajat68:<68rajat68password>@cluster0.eh1io.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+// const uri = "mongodb+srv://68rajat68:<68rajat68password>@cluster0.eh1io.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+// const mongoURI = "mongodb+srv://68rajat68:68rajat68password@inotebook.w1hhh.mongodb.net/?retryWrites=true&w=majority&appName=iNotebook";
+const mongoURI = process.env.database;
+
 const mongoose = require('mongoose');
 
 const connectToMongo = async () => {
