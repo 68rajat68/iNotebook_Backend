@@ -14,6 +14,9 @@ app.use(express.json())
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
 
+const timetableRoutes = require('./routes/timetable');
+app.use('/api/timetable', timetableRoutes);
+
 app.get('/', (req, res) => {
   res.send('Hello Rajat!')
 })
